@@ -1,10 +1,14 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Home() {
+
+
+
   return (
     <View>
-      <Text>Home</Text>
+      <Text>Lakshan</Text>
     </View>
   )
 }
+

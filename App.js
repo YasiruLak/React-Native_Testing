@@ -1,21 +1,13 @@
 import React from "react";
 import {View,Text, Button} from "react-native";
-import LoginBtn from "./components/LoginBtn";
-import NavBar from "./components/NavBar";
-import TextField from "./components/TextField";
-
+import HomePage from "./screens/HomePage";
+import Login from "./screens/Login";
 
 
 
 function App(){
   return(
-    <View>
-      <Text>Hello Ijse</Text>
-      <Button title="Hellow New One"/>
-      <NavBar/>
-      <LoginBtn/>
-      <TextField/>
-    </View>
+      <HomePage/>
   );
 }
 
