@@ -1,14 +1,19 @@
 import { View, Text } from 'react-native'
-import React, { useState } from 'react'
+import React from 'react'
+import { NativeBaseProvider, Box, Button,Switch,VStack,TextArea } from "native-base";
 
 export default function Home() {
-
-
-
   return (
-    <View>
-      <Text>Lakshan</Text>
-    </View>
+    <NativeBaseProvider>
+        <VStack space={4} alignItems="center">
+      <Box>Hello world</Box>
+      <Button mt={'40%'} size="md" variant="outline" colorScheme="secondary" width={'80%'}>
+            SECONDARY
+          </Button>  
+          <Switch defaultIsChecked colorScheme="primary" size="lg" />
+          <TextArea h={20} placeholder="Text Area Placeholder" w="75%" maxW="300" />
+          </VStack>
+  </NativeBaseProvider>
   )
 }
 
